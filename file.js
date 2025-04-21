@@ -8,5 +8,4 @@ var swiper = new Swiper('.mySwiper', {
     clickable: true,
   },
   slidesPerView: 'auto',
-  spaceBetween: 16,
 });

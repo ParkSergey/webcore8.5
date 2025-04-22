@@ -9,3 +9,4 @@ var swiper = new Swiper('.mySwiper', {
   },
   slidesPerView: 'auto',
 });
+console.log('hello');

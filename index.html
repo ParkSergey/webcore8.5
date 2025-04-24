@@ -14,43 +14,64 @@
     />
     <link rel="stylesheet" href="default.css" />
   </head>
+
   <body>
-    <div class="header">Ремонт техники различных брендов</div>
+    <header class="header">Ремонт техники различных брендов</header>
     <div class="swiper mySwiper">
       <div class="swiper-wrapper">
-        <div class="swiper-slide"><img src="img/acer.svg" alt="acer" /></div>
-        <div class="swiper-slide"><img src="img/apple.svg" alt="apple" /></div>
-        <div class="swiper-slide"><img src="img/bosch.svg" alt="bosch" /></div>
         <div class="swiper-slide">
-          <img src="img/samsung.svg" alt="samsung" />
+          <img src="img/acer.svg" alt="acer" /><img
+            src="img/go.svg"
+            alt="go"
+            height="40px"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img src="img/apple.svg" alt="apple" /><img src="img/go.svg" alt="go"
+        </div>
+        <div class="swiper-slide">
+          <img src="img/bosch.svg" alt="bosch" /><img
+            src="img/go.svg"
+            alt="go"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img src="img/hp.svg" alt="hp" /><img src="img/go.svg" alt="go" />
         </div>
         <div class="swiper-slide">
           <img src="img/lenovo.svg" alt="lenovo" />
+          <img src="img/go.svg" alt="go" />
         </div>
         <div class="swiper-slide">
           <img src="img/samsung.svg" alt="samsung" />
+          <img src="img/go.svg" alt="go" />
         </div>
-        
-          <div class="swiper-slide"><img src="img/sony.svg" alt="sony" /></div>
-          <div class="swiper-slide"><img src="img/sony.svg" alt="sony" /></div> 
-      </div>
+        <div class="swiper-slide">
+          <img src="img/acer.svg" alt="acer" />
+          <img src="img/go.svg" alt="go" />
+        </div>
+        <div class="swiper-slide">
+          <img src="img/apple.svg" alt="apple" />
+          <img src="img/go.svg" alt="go" />
+        </div>
+        <div class="swiper-slide">
+          <img src="img/bosch.svg" alt="bosch" />
+          <img src="img/go.svg" alt="go" />
         </div>
       </div>
       <div class="swiper-pagination"></div>
     </div>
-    <div class="content">
-      <div class="swiper-slide"><img src="img/acer.svg" alt="acer" /></div>
-      <div class="swiper-slide">
-          <img src="img/samsung.svg" alt="samsung" />
-          <div class="swiper-slide"><img src="img/apple.svg" alt="apple" /></div>
-        </div>
 
-    </div>
-     <div class="button">
-          <button class="hidden-button">
-          <img src="img/expand.svg" alt="expand" />Показать все
-        </button>
+    <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="file.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper('.mySwiper', {
+        pagination: {
+          el: '.swiper-pagination',
+        },
+      });
+    </script>
   </body>
 </html>

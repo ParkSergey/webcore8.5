@@ -1,66 +1,70 @@
 @font-face {
-   font-family: 'TT Lakes';
-   src: url(fonts/TTLakes-Regular.ttf) format(truetype);
- }
- @font-face {
-   font-family: 'TT Lakes';
-   src: url(fonts/TTLakes-DemiBold.ttf) format(truetype);
- }
- .swiper {
+  font-family: 'TT Lakes';
+  src: url(fonts/TTLakes-Regular.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'TT Lakes';
+  src: url(fonts/TTLakes-DemiBold.ttf) format('truetype');
+}
+.swiper {
   min-width: 320px;
-   width: 100vw;
-   height: 234px;
-   display: flex;
- }
- .swiper-wrapper{
-   display: flex;
-   align-items: center;
- }
- body {
-         background-color: #F8F8F8;
-         font-family: 'TT Lakes'
-         font-size: 16px;
-         font-weight: 400;
-         color: #7E7E82;
-         margin: 0;
-         padding: 0;
-       }
- .header {
+  width: 100px;
+  height: 234px;
+  display: flex;
+}
+.swiper-wrapper {
+  gap: 16px;
+  display: flex;
+}
+html,
+body {
+  background-color: #f8f8f8;
+  font-family: 'TT Lakes';
+  font-size: 16px;
+  font-weight: 400;
+  color: #7e7e82;
+  margin: 0;
+  padding: 0;
+}
+.header {
   width: 100%;
-   height: 80px;
-   background-color: #FFFFFF;
-   display: block;
-         font-family: 'TT Lakes';
-         font-size: 16px;
-         font-weight: 400;
-         color: #7E7E82;
-       text-align: center;
- }
-   
-       .swiper-slide {
-         width:240px;
-         height: 72px;
-         border: 1px solid #EAEAEA;
-         text-align: center;
-         font-size: 18px;
-         background: #fff;
-         display: flex;
-         justify-content: space-around;
-         align-items: center;
-         padding-left: 16px;
-         padding-top: 5px;
-         margin: 0;
-       }
-       .swiper-pagination{
-         width: 100%;
-         padding-top: 0;
-         padding-bottom: 50px;
-       }
- 
-       .swiper-slide img {
-         display: block;
-         height: 40px;
-       }
+  height: 80px;
+  background-color: #ffffff;
+  display: block;
+  font-family: 'TT Lakes';
+  font-size: 16px;
+  font-weight: 400;
+  color: #7e7e82;
+  text-align: center;
+}
+
+.swiper-slide {
+  width: 240px;
+  height: 72px;
+  border: 1px solid #eaeaea;
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 300px;
+  padding: 16px 16px 16px;
+  margin: 0;
+}
+.swiper-pagination {
+  display: block;
+  width: 100%;
+  padding-top: 16px;
+  padding-bottom: 90px;
+  margin-top: 16px;
+}
+
+.swiper-slide img {
+  display: block;
+  height: 40px;
+  width: 100px;
+}
 
 .table-swiper-slide {
   display: none;
@@ -95,7 +99,10 @@
     height: 100%;
   }
   .swiper-pagination {
-    display: none;
+    width: 204px;
+    height: 12px;
+    padding-top: 0;
+    padding-bottom: 50px;
   }
   .header {
     background-color: #ffffff;

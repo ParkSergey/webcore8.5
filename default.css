@@ -59,7 +59,7 @@ body {
   padding-bottom: 90px;
   margin-top: 16px;
 }
-img.logo{
+img.logo {
   width: 108px;
   height: 32px;
 }
@@ -83,6 +83,12 @@ img.logo{
     width: 600px;
     height: 300px;
   }
+  .hidden-button{
+    font-family: 'TT Lakes';
+    width: 133px;
+    height: 24px;
+    text-align: center;
+  }
   .swiper-wrapper {
     width: 768px;
     display: grid;
@@ -91,27 +97,27 @@ img.logo{
     grid-template-columns: repeat(3, 1fr);
   }
   .swiper-slide {
-  width: 240px;
-  height: 72px;
-  border: 1px solid #eaeaea;
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 16px 16px 16px;
-  margin: 0;
-}
-  img.logo{
-  width: 108px;
-  height: 32px;
-}
-.swiper-slide img:last-child {
-  display: block;
-  height: 40px;
-  width: 40px;
-}
+    width: 240px;
+    height: 72px;
+    border: 1px solid #eaeaea;
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 16px 16px;
+    margin: 0;
+  }
+  img.logo {
+    width: 108px;
+    height: 32px;
+  }
+  .swiper-slide img:last-child {
+    display: block;
+    height: 40px;
+    width: 40px;
+  }
   .swiper-pagination {
     display: none;
     width: 204px;
@@ -153,6 +159,12 @@ img.logo{
     min-width: 100%;
     width: 1120px;
     height: 288px;
+  }
+  .hidden-button{
+    font-family: 'TT Lakes';
+    width: 133px;
+    height: 24px;
+    text-align: center;
   }
   .table-swiper-slide {
     display: block;

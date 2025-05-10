@@ -1,10 +1,12 @@
 @font-face {
   font-family: 'TT Lakes';
   src: url(fonts/TTLakes-Regular.ttf) format('truetype');
+  font-weight: 400;
 }
 @font-face {
   font-family: 'TT Lakes';
   src: url(fonts/TTLakes-DemiBold.ttf) format('truetype');
+  font-weight: 700;
 }
 .swiper {
   min-width: 320px;
@@ -37,12 +39,12 @@ body {
   font-weight: 400;
   color: #7e7e82;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .swiper-slide {
   width: 240px;
   height: 72px;
-  border: 1px solid #eaeaea;
   text-align: center;
   font-size: 18px;
   background: #fff;
@@ -80,11 +82,11 @@ img.logo {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    width: 600px;
-    height: 300px;
+    width: 100%;
+    height: 100%;
   }
-  .hidden-button{
-    font-family: 'TT Lakes';
+  .hidden-button {
+    font-family: 'TT Lakes',;
     width: 133px;
     height: 24px;
     text-align: center;
@@ -94,7 +96,7 @@ img.logo {
     display: grid;
     justify-content: start;
     gap: 16px 24px;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(3, 4fr));
   }
   .swiper-slide {
     width: 240px;
@@ -124,6 +126,12 @@ img.logo {
     height: 12px;
     padding-top: 0;
     padding-bottom: 50px;
+  }
+  .hidden-button {
+    font-family: 'TT Lakes';
+    width: 133px;
+    height: 24px;
+    text-align: center;
   }
   .header {
     background-color: #ffffff;
@@ -160,7 +168,7 @@ img.logo {
     width: 1120px;
     height: 288px;
   }
-  .hidden-button{
+  .hidden-button {
     font-family: 'TT Lakes';
     width: 133px;
     height: 24px;

@@ -5,5 +5,4 @@ const swiper = new Swiper('.mySwiper', {
   },
   slidesPerView: 'auto',
 });
-let swiper = null;
 

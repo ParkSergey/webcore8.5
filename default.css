@@ -37,7 +37,7 @@ body {
   font-size: 16px;
   font-weight: 400;
   color: #7e7e82;
-  text-align: center;
+  text-align: left;
   text-transform: uppercase;
 }
 .brands{
@@ -92,7 +92,7 @@ img.logo {
   .brands{
     
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 290px);
   grid-template-rows: repeat(4, auto);
 }
 .brands > *:nth-child(n+9) {
@@ -152,12 +152,14 @@ img.logo {
     height: 24px;
     text-align: center;
   }
-  .header {
+   .header {
     background-color: #ffffff;
+    font-family: 'TT Lakes';
+    display: flex;
+    align-items: center;
     width: 100%;
-    height: 72px;
+    height: 56px;
     text-align: left;
-    padding: 16px 32px;
   }
   .table-swiper-slide {
     display: none;
@@ -193,14 +195,13 @@ img.logo {
     height: 288px;
   }
   .hidden-button {
+    display: flex;
+    align-items: center;
     font-family: 'TT Lakes';
     width: 133px;
     height: 24px;
     text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 6px;
+    margin: 24px;
   }
   .button-icon {
   transition: transform 0.3s;

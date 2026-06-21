@@ -12,10 +12,6 @@ const buttonText = button.querySelector('span');
 const icon = button.querySelector('img');
 
 button.addEventListener('click', () => {
-  if (window.innerWidth < 1120) {
-    return;
-  }
-
   brands.classList.toggle('expanded');
 
   if (brands.classList.contains('expanded')) {

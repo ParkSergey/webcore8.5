@@ -1,3 +1,6 @@
+.header {
+  box-sizing: border-box;
+}
 @font-face {
   font-family: 'TT Lakes';
   src: url(fonts/TTLakes-Regular.ttf) format('truetype');
@@ -80,10 +83,10 @@ img.logo {
 .hidden-button {
   display: none;
 }
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1119px) {
   .swiper.mySwiper {
     display: none;
-    grid-template-columns: repeat(4, 280px);
+    grid-template-columns: repeat(4, 1fr);
     justify-content: space-between;
     gap: 16px;
     flex-wrap: wrap;
@@ -92,13 +95,14 @@ img.logo {
   }
   .brands {
     display: grid;
-    grid-template-columns: repeat(4, 290px);
-    grid-template-rows: repeat(4, auto);
+    gap: 16px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
   }
-  .brands > *:nth-child(n + 9) {
+  .brands > *:nth-child(n + 7) {
     display: none;
   }
-  .brands.expanded > *:nth-child(n + 9) {
+  .brands.expanded > *:nth-child(n + 7) {
     display: flex;
   }
   .hidden-button {
@@ -126,7 +130,7 @@ img.logo {
     justify-content: space-between;
     align-items: center;
     padding: 16px 16px 16px;
-    margin: 16px;
+    margin: 0;
   }
   img.logo {
     width: 108px;
@@ -186,8 +190,20 @@ img.logo {
     text-align: left;
     padding: 24px;
   }
-  .swiper {
+  .brands {
     display: grid;
+    gap: 16px;
+    grid-template-columns: repeat(4, 290px);
+    grid-template-rows: repeat(4, auto);
+  }
+  .brands > *:nth-child(n + 9) {
+    display: none;
+  }
+  .brands.expanded > *:nth-child(n + 9) {
+    display: flex;
+  }
+  .swiper {
+    display: none;
     grid-template-columns: repeat(4, 240px);
     justify-content: space-around;
     gap: 24px;
